@@ -7,9 +7,9 @@ CREATE TABLE Country (
     GovernmentEffectiveness DECIMAL(6,3),
     PopulationDensity DECIMAL(8,3),
     EconomicStatus CHAR(50),
-    ...Group CHAR(50),
+    Country_Group CHAR(50),
     PRIMARY KEY (CountryCode)
-)
+);
 
 CREATE TABLE ClimateData(
     CountryCode CHAR(4),
