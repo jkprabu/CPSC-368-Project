@@ -6,10 +6,10 @@ CREATE TABLE Country (
     IncomeGroup CHAR(50),
     GovernmentEffectiveness DECIMAL(6,3),
     PopulationDensity DECIMAL(8,3),
-    EconomicStatus CHAR(50),
-    ...Group CHAR(50),
+    DevelopedOrDeveloping CHAR(50),
+    TradeBloc CHAR(50),
     PRIMARY KEY (CountryCode)
-)
+);
 
 CREATE TABLE ClimateData(
     CountryCode CHAR(4),
@@ -36,3 +36,4 @@ CREATE TABLE ClimateAgreement(
     FOREIGN KEY (CountryCode) REFERENCES Country
         ON DELETE CASCADE
 );
+
